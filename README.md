@@ -20,3 +20,9 @@ To
       <link rel="canonical" href="{{ canonical_url }}" />
     {% endif %}
 ```
+
+**Fix sitewide broken JS**
+Remove the following from line 140 of theme.liquid:
+```
+{% render 'upsell-now', customer: customer, product: product, template: template, cart: cart %}
+```
